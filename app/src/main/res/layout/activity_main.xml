@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="165dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            app:srcCompat="@drawable/gdg"
+            />
+        <com.github.florent37.materialtextfield.MaterialTextField
+            android:id="@+id/editEmail"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/img"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            app:mtf_labelColor="#111">
+            <EditText
+                android:id="@+id/loginEmail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/preto"/>
+        </com.github.florent37.materialtextfield.MaterialTextField>
+
+        <com.github.florent37.materialtextfield.MaterialTextField
+            android:id="@+id/editSenha"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/editEmail"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            app:mtf_labelColor="#111">
+            <EditText
+                android:id="@+id/loginSenha"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/senha"
+                android:inputType="textPassword"
+                android:textColorHint="@color/preto"/>
+        </com.github.florent37.materialtextfield.MaterialTextField>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editSenha"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="30dp"
+            android:background="@color/colorAccent"
+            android:text="Login"
+            android:textColor="@color/branco"
+
+            />
+
+        <Button
+            android:id="@+id/btnCadastrar"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnLogin"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="30dp"
+            android:background="@color/colorAccent"
+            android:text="Cadastrar"
+            android:textColor="@color/branco"
+
+            />
+
+    </RelativeLayout>
+
+</ScrollView>
