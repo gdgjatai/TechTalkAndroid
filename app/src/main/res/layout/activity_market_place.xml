@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MarketPlaceActivity"
+    android:background="@color/azulClaro">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="165dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            app:srcCompat="@drawable/gdg"
+            />
+
+        <TextView
+            android:id="@+id/twSobreGDG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/img"
+            android:text="@string/sobre"
+            android:textSize="15sp"
+            android:textColor="@color/preto"
+            android:textAlignment="center"/>
+
+        <Button
+            android:id="@+id/btnEventos"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/twSobreGDG"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="30dp"
+            android:background="@color/colorAccent"
+            android:text="@string/eventos"
+            android:textColor="@color/branco"/>
+
+        <Button
+            android:id="@+id/btnCadastrar"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnEventos"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="30dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/membros"
+            android:textColor="@color/branco"/>
+    </RelativeLayout>
+
+</ScrollView>
